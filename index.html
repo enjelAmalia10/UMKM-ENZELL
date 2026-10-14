@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UMKM-ENZEL | Basreng Lezat</title>
+    <meta name="description" content="UMKM-ENZEL menyediakan Basreng Original dan Basreng Pedas Balado dengan harga terjangkau.">
+
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/script.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <a href="#beranda" class="identitas">
+            <img src="./Assets/logo.jpg" alt="Logo UMKM-ENZEL">
+            <h2>UMKM-ENZEL</h2>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Buka menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <a href="#beranda">Beranda</a>
+            <a href="#produk">Produk</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- BERANDA -->
+        <section class="hero" id="beranda">
+            <div class="hero-text">
+                <p class="label">CAMILAN RENYAH FAVORITMU</p>
+
+                <h1>Basreng Enak,<br>Bikin <span>Nagih!</span></h1>
+
+                <p class="deskripsi">
+                    Nikmati camilan basreng yang renyah dan gurih.
+                    Tersedia rasa original dan pedas balado untuk
+                    menemani waktu santaimu.
+                </p>
+
+                <a href="#produk" class="btn">Lihat Produk →</a>
+            </div>
+
+            <div class="hero-visual">
+                <span class="bintang">✦</span>
+                <p>CAMILAN PILIHAN</p>
+                <h2>ENZEL</h2>
+                <div class="garis-hias"></div>
+                <span class="tagline">RENYAH • GURIH • LEZAT</span>
+            </div>
+        </section>
+
+        <!-- PRODUK -->
+        <section class="produk-section" id="produk">
+            <div class="judul-section">
+                <p class="label">PILIHAN CAMILAN</p>
+                <h2>Produk <span>Kami</span></h2>
+                <p>Pilih rasa favoritmu dengan harga terjangkau.</p>
+            </div>
+
+            <div class="produk-container">
+
+                <article class="produk-card">
+                    <div class="produk-gambar">
+                        <img src="./Assets/original.jpg"
+                             alt="Basreng Original"
+                             loading="lazy">
+                    </div>
+
+                    <div class="produk-info">
+                        <span class="nomor">01 / ORIGINAL</span>
+                        <h3>Basreng Original</h3>
+                        <p>Basreng renyah dengan rasa gurih yang nikmat.</p>
+
+                        <div class="baris-harga">
+                            <span class="harga">Rp5.000</span>
+                            <button class="btn pesan"
+                                    type="button"
+                                    data-produk="Basreng Original">
+                                Pesan Sekarang ↗
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="produk-card">
+                    <div class="produk-gambar">
+                        <img src="./Assets/balado.jpg"
+                             alt="Basreng Pedas Balado"
+                             loading="lazy">
+                    </div>
+
+                    <div class="produk-info">
+                        <span class="nomor">02 / PEDAS BALADO</span>
+                        <h3>Basreng Pedas Balado</h3>
+                        <p>Basreng renyah dengan perpaduan rasa pedas dan balado.</p>
+
+                        <div class="baris-harga">
+                            <span class="harga">Rp5.000</span>
+                            <button class="btn pesan"
+                                    type="button"
+                                    data-produk="Basreng Pedas Balado">
+                                Pesan Sekarang ↗
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- TENTANG -->
+        <section class="tentang" id="tentang">
+            <p class="label">TENTANG KAMI</p>
+            <h2>Camilan Sederhana,<br>Rasa Istimewa.</h2>
+
+            <p>
+                UMKM-ENZEL menyediakan Basreng Original dan
+                Basreng Pedas Balado untuk menemani waktu santai.
+                Kami berusaha menghadirkan camilan yang renyah,
+                gurih, dan terjangkau.
+            </p>
+        </section>
+
+        <!-- KONTAK -->
+        <section class="kontak" id="kontak">
+            <div class="judul-kontak">
+                <p class="label">MAU PESAN?</p>
+                <h2>Yuk, Borong Basreng Kami!</h2>
+                <p>Hubungi kami untuk informasi dan pemesanan.</p>
+            </div>
+
+            <div class="info-kontak">
+                <div class="info-item">
+                    <span class="ikon">✉</span>
+                    <div>
+                        <h3>Email</h3>
+                        <a href="mailto:enzelamalia@gmail.com">
+                            enzelamalia@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="ikon">⌖</span>
+                    <div>
+                        <h3>Alamat Kampus</h3>
+                        <p>Silakan isi alamat kampus kamu</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="ikon">◷</span>
+                    <div>
+                        <h3>Jam Operasional</h3>
+                        <p>Setiap hari, 11.00–17.00 WIB</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="ikon">☏</span>
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <p id="nomorTampil">+62 838-2443-0526</p>
+                    </div>
+                </div>
+            </div>
+
+            <a class="btn" id="tombolKontak"
+               href="https://wa.me/6283824430526"
+               target="_blank" rel="noopener noreferrer">
+                Pesan via WhatsApp ↗
+            </a>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>UMKM-ENZEL</h3>
+        <p id="footerText">
+            © 2026 UMKM-ENZEL. Semua hak dilindungi.
+        </p>
+    </footer>
+
+</body>
+</html>
